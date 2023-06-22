@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>20to check the string strat and end with particular letter</title>
+</head>
+<body>
+
+
+    <script>
+        var string=prompt('enter the string')
+        /* let y=string.length
+        console.log(y)
+        let x=y-1
+        console.log(x)
+        var teststrart=string.startsWith(`${string[0]}`)
+        var testend=string.endsWith(`${string[x]}`) */
+        var teststrart=string.startsWith(`w`)
+        var testend=string.endsWith(`e`)
+        if(teststrart==true && testend==true){
+            console.log(`the word start with w and end with e`)
+        } else if(teststrart==true && testend==false){
+            console.log('start withe w but dose not end with e')
+        }else if(teststrart==false && testend==true){
+            console.log('dose not start wiht w and end with e')
+        }else{
+            console.log('is not start and end with w and e ')
+        }
+
+
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>to check the repetted letters in the word</title>
+</head>
+<body>
+    <script>
+        var string=prompt('enter the string')
+        var letter=prompt('enter the letter ')
+        var strlen=string.length
+        var count=0
+        
+        for(var i=0;i<strlen;i++){
+            if(string[i]==letter){
+                count++;
+            }
+        }
+        console.log(`${letter} is repeted ${count} times`)
+
+    </script>
+</body>
+</html>
