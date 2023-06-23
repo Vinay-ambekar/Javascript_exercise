@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>count number of vowels in string</title>
+</head>
+<body>
+    <script>
+        var string=prompt('please enter a string')
+        const reg=/[aeiou]/gi;//regex,[aeiou]=>epresion, gi=>modifier, g =>global,i=ignore case sentivity
+        var chars=string.match(reg)
+        console.log(chars.join(','))
+        console.log(chars.length)
+
+    </script>
+    
+</body>
+</html>
