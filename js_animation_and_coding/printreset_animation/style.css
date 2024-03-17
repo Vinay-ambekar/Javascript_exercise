@@ -1,0 +1,62 @@
+body,html{
+    height: 100%;
+    margin: 0;
+    display: flex;
+    
+    background-color: #4158D0;
+    background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+  
+  }
+  
+  
+  
+  .spirale{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    position: absolute;
+    transform: rotate(90deg);
+    height: 50rem;
+    animation: left_right 6s ease-in-out 0s infinite;
+  }
+  @keyframes left_right{
+    0%{
+      margin-left:0;
+    }
+    50%{
+      margin-left:40rem;
+    }
+    100%{
+      margin-left:0;
+    }
+  }
+  
+    
+   
+  .spirale div{
+    color:#ff1a1a;
+    text-shadow: 2px 3px 1px rgba(0,0,0,0.2); ;
+  }
+  @property --angle{
+    syntax: '<angle>';
+    initial-value: 0deg;
+    inherits: false;
+  }
+  @keyframes spirale{
+    0%{
+      --angle: 0deg;
+    }
+    100%{
+      --angle: 360deg;
+    }
+  }
+   
+  
+  .character{
+    color:white;
+    font-size: 4em;
+    transform: translateY(calc(sin(var(--angle)) * 100px)) scale(calc(cos(var(--angle)) * 0.5 + 0.5));
+  
+    animation:spirale 4s linear infinite;
+    
+  }
