@@ -1,0 +1,115 @@
+
+:root{
+    --primar_color:#365e97;
+    --secondary_color:#fb6542;
+    --third_color:#ffbb00;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    
+    justify-content: center;
+}
+.inputs{
+    display: flex;
+    padding: 1rem;
+    
+}
+label{
+   
+    font-size: 1.5rem;
+    color: var(--primar_color);
+    flex-basis: 20%;
+    margin-left: 25%;
+}
+/*  input{
+height: 1.5rem;
+font-size: 1.2rem;
+flex-basis: 30%;
+outline: green;
+border-radius: 5px;
+} */
+/* Add this CSS to your style.css file */
+.inputs input {
+    border: 1px solid #ccc; /* Add a border style */
+    padding: 8px; /* Add padding for better spacing */
+    margin-bottom: 10px; /* Add margin to separate input fields */
+    outline: none; /* Remove default outline */
+    transition: border-color 0.3s;/* Add transition effect for border color change */
+    border-radius: 10px;
+    width: 30rem;
+    font-size: 1.2rem;
+}
+
+/* Add focus style for input fields */
+.inputs input:focus {
+    border-color: var(--primar_color); /* Change border color on focus */
+}
+
+
+
+
+
+/*  */
+h1{
+    color: #fb6542;
+    font-size: 3rem;
+    text-align: center;
+}
+button{
+    width: 8rem;
+    height: 3rem;
+    border: none;
+    background-color: var(--third_color);
+    color: var(--primar_color);
+    text-align: center;
+    margin-left: 50%;
+    margin-bottom: 5%;
+    font-size: 1.5rem;
+    font-weight: bolder;
+    cursor: pointer;
+    padding:0.5rem;
+    
+}
+span{
+    color:red;
+    margin-left: 0.5rem;    
+    font-size: 18px;
+}
+/* slip genrating */
+
+.container{
+    border: 1px solid black;
+    justify-content: center;
+    align-items: center;
+    width: 70rem;
+    
+    margin-left:20% ;
+    margin-bottom: 10%;
+    
+}
+.two_tables{
+    display: flex;
+    position: relative;
+
+}
+
+table,th,td{
+    font-size: 1.5rem;
+    padding: 5px;
+    border: 1px solid black;
+    border-collapse: collapse;
+
+}
+.table1{
+    
+    flex: 3;
+    margin-left: 5%;
+   
+}
+.table2{
+    flex:3.4;
+}
+h2,h3{
+    margin-left: 5rem;
+}
