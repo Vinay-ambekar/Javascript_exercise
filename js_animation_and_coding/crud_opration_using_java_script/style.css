@@ -1,0 +1,75 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+:root{
+    --primary-color:aliceblue;
+    --secondary-color:rgb(254, 254, 66);
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: gray;
+}
+.form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: aliceblue;
+    width: 50%;
+    margin-top: 5%;
+    border-radius:2rem ;
+    padding: 2rem;
+}
+form{
+    display:none;
+    margin: 1rem;
+   /*  padding: 1rem; */
+   
+}
+input{
+    border: 1px solid black;
+    border-radius: 2rem;
+    height: 2rem;
+    background-color: aliceblue;
+    font-size: 1rem;
+    margin: 0.5rem;
+}
+input[type='text'],input[type='email']{
+    padding:0.5rem;
+}
+input:focus{
+    outline: none;
+}
+button{
+    font-size: 1rem;
+    padding: 0.5rem;
+    border: none;
+    background-color: var(--secondary-color);
+    color: gray;
+    border-radius:10% ;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+/* table{
+ 
+    
+}
+
+tr{
+    background-color: var(--primary-color);
+    justify-content: space-between;
+    display: flex;
+    gap: 15rem;
+}
+th,td,tbody{
+    background-color: var(--primary-color);
+}
+.form button:nth-child(3) {
+    margin-top: 1rem;
+  } */
+
+
